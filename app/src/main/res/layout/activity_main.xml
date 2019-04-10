@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.MainActivity">
+
+    <TextView
+        android:id="@+id/tvInfoAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Untuk menambah transaksi klik icon di pojok kanan atas"
+        android:textColor="#000"
+        android:textSize="15sp"
+        android:textAlignment="center"
+        android:padding="16dp"/>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000"
+        android:layout_below="@id/tvInfoAdd"/>
+
+    <TextView
+        android:id="@+id/tvInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jumlah transaksi pada tanggal : "
+        android:textColor="#000"
+        android:textSize="12sp"
+        android:paddingLeft="16dp"
+        android:paddingTop="10dp"
+        android:layout_below="@id/view"/>
+
+    <ImageView
+        android:id="@+id/ivCheck"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/calendar"
+        android:layout_below="@id/view"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/tvInfo"/>
+
+    <TextView
+        android:id="@+id/tvInfoThird"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nomor : "
+        android:textColor="#000"
+        android:textSize="12sp"
+        android:paddingLeft="16dp"
+        android:paddingTop="10dp"
+        android:layout_below="@id/tvInfo"/>
+
+    <TextView
+        android:id="@+id/tvInfoNomor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UM/190123/2"
+        android:textColor="#000"
+        android:textSize="12sp"
+        android:paddingTop="10dp"
+        android:layout_below="@id/tvInfo"
+        android:layout_toRightOf="@id/tvInfoThird"/>
+
+    <View
+        android:id="@+id/viewTwo"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000"
+        android:layout_below="@id/tvInfoThird"
+        android:layout_marginTop="10dp"/>
+
+    <ListView
+        android:id="@+id/lvNotes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/viewTwo"/>
+
+</RelativeLayout>

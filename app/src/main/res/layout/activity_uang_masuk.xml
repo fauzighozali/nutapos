@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:context=".activity.UangMasukActivity">
+
+    <!--<EditText-->
+        <!--android:id="@+id/edtTitle"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="30dp"-->
+        <!--android:hint="Java Sample Approach"-->
+        <!--android:inputType="textPersonName" />-->
+
+    <!--<EditText-->
+        <!--android:id="@+id/edtContent"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:hint="Java technology, Spring Framework - approach to Java by Sample."-->
+        <!--android:inputType="textMultiLine" />-->
+
+    <EditText
+        android:id="@+id/edtNomor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Nomor"
+        android:textSize="15sp"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/edtTerimaDari"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Terima Dari"
+        android:textSize="15sp"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/edtKeterangan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Keterangan"
+        android:textSize="15sp"
+        android:inputType="textMultiLine" />
+
+    <EditText
+        android:id="@+id/edtJumlah"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Jumlah"
+        android:textSize="15sp"
+        android:inputType="number" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/edtTanggal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Tanggal"
+            android:textSize="15sp"
+            android:inputType="text"
+            android:layout_toLeftOf="@id/ivTanggal"
+            android:layout_marginRight="10dp"/>
+
+        <ImageView
+            android:id="@+id/ivTanggal"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/calendar"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Add" />
+
+</LinearLayout>
